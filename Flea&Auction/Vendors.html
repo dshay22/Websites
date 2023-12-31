@@ -17,29 +17,47 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="vendors.html" class="active">Auction Vendors</a>
+        
+        <div class="dropdown-nav">
+            <a href="vendors.html" class="active">Auction Vendors</a>
+            <div class="dropdown-content-nav">
+                <!-- Add your dropdown content here -->
+                <a href="Auction-Info.html">About The Auction</a>
+                <!-- Add more vendors as needed -->
+            </div>
+        </div>
+
         <a href ="Flea.html">Flea Vendors</a>
-        <a href="About.html">About</a>
         <a href="Contact.html">Contact</a>
     </nav>
 
-    <main>
+    <!-- <div class="first-description-box">
         <h2>Welcome to the Vendors Page!</h2>
         <p>This is the page where you can learn about our vendors and partners.</p>
-        <br>
+    </div> -->
+
+    <main>
+        <div class="first-description-box">
+            <h2>Welcome to the Vendors Page!</h2>
+            <p>This is the page where you can learn about our vendors and partners.</p>
+        </div>
+        <!-- BASIC TEMPLATE -->
         <section class="vendor-section">
-            <img src="vendor1.jpg" alt="Vendor 1">
-            <h3>Vendor 1</h3>
-            <p>Description of Vendor 1.</p>
-            <a href="vendor1-link1.html">Link 1</a>
-            <a href="vendor1-link2.html">Link 2</a>
-        </section>
-        <section class="vendor-section">
-            <img src="vendor2.jpg" alt="Vendor 2">
-            <h3>Vendor 2</h3>
-            <p>Description of Vendor 2.</p>
-            <a href="vendor2-link1.html">Link 1</a>
-            <a href="vendor2-link2.html">Link 2</a>
+            <div class="slideshow-container">
+                <img src="vendor1.jpg" alt="Vendor 1" class="vendor-image">
+                <img src="Images/Kanye-Image.png" alt="Vendor 1" class="vendor-image">
+                <img src="Images/1.PNG" alt="Vendor 1" class="vendor-image">
+            </div>
+            <h3>Vendor X</h3>
+            <p>NONE</p>
+            <div class="dropdown">
+                <button class="dropbtn">My Links</button>
+                <div class="dropdown-content">
+                    <a href="vendor1-link1.html">Link 1</a>
+                    <a href="vendor1-link2.html">Link 2</a>
+                    <!-- Add additional My Links here if needed -->
+                </div>
+            </div>
         </section>
 
     </main>

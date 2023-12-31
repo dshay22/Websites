@@ -1,9 +1,12 @@
+
+
 body {
     font-family: 'Buffalow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Light blue background */
     color: #000; /* Black text color */
+    padding-bottom: 80px;
 }
 
 header {
@@ -19,15 +22,50 @@ nav {
     text-align: center;
 }
 
+/* Nav bar dropdown menu Styles*/
+.dropdown-nav {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-nav {
+    display: none;
+    position: absolute;
+    background-color: rgb(68, 68, 68);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%; /* Adjust the width as needed */
+    text-align: center; /* Center the dropdown content */
+    top: 100%; /* Position the dropdown below the link */
+}
+
+.dropdown-content-nav a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+
+}
+
+.dropdown-nav:hover .dropdown-content-nav {
+    display: block;
+}
+
+.dropdown-content-nav a:hover {
+    background-color: rgb(85, 85, 85);
+}
+
+/*End of Nav bar dropdown menu Styles*/
+
 nav a {
-    color: #fff; /* White text color for navigation links */
+    color: rgb(255, 255, 255);
     text-decoration: none;
     padding: 10px;
     margin: 0 10px;
 }
 
 nav a:hover {
-    background-color: #555; /* Darker background on hover */
+    background-color: rgb(85, 85, 85);
 }
 
 main {
@@ -36,7 +74,9 @@ main {
 
 .first-description-box,
 .when-where-box,
-.parking-box {
+.parking-box,
+.auction-dates-box,
+.load-in-box {
     background-color: #fff; /* White background for boxes */
     border: 1px solid #ddd; /* Gray border for boxes */
     border-radius: 8px; /* Rounded corners for boxes */
@@ -50,10 +90,6 @@ main h2 {
     margin-bottom: 10px;
 }
 
-main pre {
-    font-family: 'Buffalow', Arial, sans-serif; /* Fallback to Arial and sans-serif if 'Buffalow' is not available */
-}
-
 main p {
     margin-bottom: 15px;
 }
@@ -64,6 +100,22 @@ main a {
 
 main a:hover {
     color: #21618c; /* Darker blue on hover */
+}
+
+.auction-table, .load-in-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.auction-table th, .auction-table td, .load-in-table th, .load-in-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.auction-table th, .load-in-table th{
+    background-color: #f2f2f2;
 }
 
 footer {
